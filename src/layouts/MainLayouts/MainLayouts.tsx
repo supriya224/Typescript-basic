@@ -6,7 +6,7 @@ interface IMainComponent {
 
 function MainLayout({ children }: IMainComponent) {
     return (
-        <main id='main-layout' className='my-32 text-center' >{children}</main>
+        <main id='main-layout' className='my-10 text-center' >{children}</main>
 
     )
 }

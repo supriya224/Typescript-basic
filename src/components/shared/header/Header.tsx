@@ -19,7 +19,7 @@ const Header = () => {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lgmd:flex-row md:space-x-8 md:mt-0 md:border-0">
             <li>
-              <Link to='/home' className="" aria-current="page" >
+              <Link to='/home' className="hover:text-white shadow-lg shadow-black w-20 h-32 p-4" aria-current="page" >
                 Home
               </Link>
             </li>
