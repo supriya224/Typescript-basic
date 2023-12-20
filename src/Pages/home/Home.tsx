@@ -23,7 +23,7 @@ export const Home = () => {
   return (
     <div>
 
-<CounterFunc/>
+<CounterFunc  message="the count value is"/>
 
 
 
