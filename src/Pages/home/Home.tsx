@@ -3,7 +3,11 @@
 // import {  Box} from "../../components/Index"
 // import { ThemeContextProvider } from "../../components/context/ThemeContext"
 
-import { CounterFunc } from "../../components/Index"
+import { List } from "../../components/Index"
+
+// import { CounterFunc } from "../../components/Index"
+// import { Private } from "../../components/auth/Private"
+// import { Profile } from "../../components/auth/Profile"
 
 
 // const personName={
@@ -22,12 +26,29 @@ import { CounterFunc } from "../../components/Index"
 export const Home = () => {
   return (
     <div>
-
-<CounterFunc  message="the count value is"/>
-
-
-
-
+      {/* <List items={["batman","superman", "superwomen", "women", "men"]} onClick={(item)=>console.log(item)} /> */}
+      <List items={[
+        {
+        id:1,
+        first:"neha",
+        last:"maurya",
+        age:23
+      },{
+        id:2,
+        first:"neieha",
+        last:"maurya",
+        age:27
+      },
+      {
+        id:3,
+        first:"vhbhha",
+        last:"maurya",
+        age:20
+      }
+      ]} onClick={(item)=>console.log(item)} />
+      {/* <List items={[134,34,67,89,12,]} onClick={(item)=>console.log(item)} /> */}
+      {/* <Private isLoggedIn={false} component={Profile}/>  //if it will be false then return  login*/}
+      {/* <CounterFunc  message="the count value is"/> */}
 
       {/* <DomRef/>
       <MutableRef/> */}

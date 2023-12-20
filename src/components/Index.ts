@@ -17,3 +17,4 @@ export { User} from "./context/User";
 export { DomRef} from "./ref/DomRef";
 export { MutableRef} from "./ref/MutableRef";
 export { CounterFunc} from "./class/CounterFunc";
+export {List} from './generic/List'
