@@ -3,7 +3,7 @@
 // import {  Box} from "../../components/Index"
 // import { ThemeContextProvider } from "../../components/context/ThemeContext"
 
-import { List } from "../../components/Index"
+import {Toast } from "../../components/Index"
 
 // import { CounterFunc } from "../../components/Index"
 // import { Private } from "../../components/auth/Private"
@@ -26,8 +26,11 @@ import { List } from "../../components/Index"
 export const Home = () => {
   return (
     <div>
+      <Toast position='center'/>
+      {/* <RandomNum value={30} isNegative={true} isPositive={false} isZero={false}/> */}
+      {/* <RandomNum value={30} isPositive/> */}
       {/* <List items={["batman","superman", "superwomen", "women", "men"]} onClick={(item)=>console.log(item)} /> */}
-      <List items={[
+      {/* <List items={[
         {
         id:1,
         first:"neha",
@@ -45,7 +48,7 @@ export const Home = () => {
         last:"maurya",
         age:20
       }
-      ]} onClick={(item)=>console.log(item)} />
+      ]} onClick={(item)=>console.log(item)} /> */}
       {/* <List items={[134,34,67,89,12,]} onClick={(item)=>console.log(item)} /> */}
       {/* <Private isLoggedIn={false} component={Profile}/>  //if it will be false then return  login*/}
       {/* <CounterFunc  message="the count value is"/> */}

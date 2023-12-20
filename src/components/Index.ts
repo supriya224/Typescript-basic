@@ -18,3 +18,6 @@ export { DomRef} from "./ref/DomRef";
 export { MutableRef} from "./ref/MutableRef";
 export { CounterFunc} from "./class/CounterFunc";
 export {List} from './generic/List'
+
+export {RandomNum} from './restriction/RandomNum'
+export {Toast} from './templateLiterals/Toast'
