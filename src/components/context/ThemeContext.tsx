@@ -1,6 +1,7 @@
-import { createContext } from "vm";
+import { createContext } from 'react';
+import { theme } from './theme';
 // import { theme } from "./theme";////
- import { theme } from "./theme";
+//  import { theme } from "./theme";
 
 type ThemeContextProviderProps = {
     children: React.ReactNode
@@ -8,6 +9,6 @@ type ThemeContextProviderProps = {
 }
 export const ThemeContext = createContext(theme)
 
-export const ThemeContextProvider = ({ children, }: ThemeContextProviderProps) => {
-    return <ThemeContextProvider value={theme}>{children}</ThemeContextProvider>
-}   
+export const ThemeContextProvider = ({ children}: ThemeContextProviderProps) => {
+    return <ThemeContextProvider>{children}</ThemeContextProvider>
+}    

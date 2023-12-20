@@ -1,7 +1,9 @@
 // import { Button, Container, Input, People, Status } from "../../components/Index"
+// import { DomRef, MutableRef } from "../../components/Index"
+// import {  Box} from "../../components/Index"
+// import { ThemeContextProvider } from "../../components/context/ThemeContext"
 
-import {  Box} from "../../components/Index"
-import { ThemeContextProvider } from "../../components/context/ThemeContext"
+import { CounterFunc } from "../../components/Index"
 
 
 // const personName={
@@ -20,9 +22,18 @@ import { ThemeContextProvider } from "../../components/context/ThemeContext"
 export const Home = () => {
   return (
     <div>
-      <ThemeContextProvider>
+
+<CounterFunc/>
+
+
+
+
+
+      {/* <DomRef/>
+      <MutableRef/> */}
+      {/* <ThemeContextProvider>
         <Box/>
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
       {/* <Counter/> */}
       {/* <User /> */}
       {/* <LoggedIn /> */}
