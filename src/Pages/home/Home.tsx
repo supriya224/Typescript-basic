@@ -1,6 +1,7 @@
 // import { Button, Container, Input, People, Status } from "../../components/Index"
 
-import { LoggedIn } from "../../components/Index"
+import {  Box} from "../../components/Index"
+import { ThemeContextProvider } from "../../components/context/ThemeContext"
 
 
 // const personName={
@@ -19,7 +20,13 @@ import { LoggedIn } from "../../components/Index"
 export const Home = () => {
   return (
     <div>
-<LoggedIn/>
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
+      {/* <Counter/> */}
+      {/* <User /> */}
+      {/* <LoggedIn /> */}
+
       {/* <Status status="loading" />
       <Input value="" handleChange={(event) => console.log(event)} />
       <Button handleClick={(event, id) => {
