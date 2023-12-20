@@ -1,1 +1,0 @@
-export { default as MainLayouts } from "./MainLayouts/MainLayouts";
