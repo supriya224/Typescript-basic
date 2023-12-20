@@ -17,3 +17,4 @@ export const Person = (props:Person) => {
     </div>
   )
 }
+  

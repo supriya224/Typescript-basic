@@ -6,3 +6,6 @@ export { Person } from "./core/Person";
 export { Status } from "./core/Status";
 export { Button } from "./core/Button";
 export { Input } from "./core/Input";
+export { Container} from "./core/Container";
+export { People} from "./core/People";
+export { LoggedIn} from "./state/LoggedIn";
