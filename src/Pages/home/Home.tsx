@@ -3,7 +3,7 @@
 // import {  Box} from "../../components/Index"
 // import { ThemeContextProvider } from "../../components/context/ThemeContext"
 
-import {Toast } from "../../components/Index"
+import {Text} from "../../components/Index"
 
 // import { CounterFunc } from "../../components/Index"
 // import { Private } from "../../components/auth/Private"
@@ -26,7 +26,13 @@ import {Toast } from "../../components/Index"
 export const Home = () => {
   return (
     <div>
-      <Toast position='center'/>
+      <Text as="h1" size="lg">heading</Text>
+      <Text as="p"  size="md">paragraph</Text>
+      <Text as="label" htmlFor="someId"  size="sm" color="secondary">paragraph fdg</Text>
+      {/* <Text/> */}
+      {/* <Button variant="primary" onClick={()=>console.log('clicked')}>Primary button</Button> */}
+  {/* // <Button> */}
+      {/* <Toast position='center'/> */}
       {/* <RandomNum value={30} isNegative={true} isPositive={false} isZero={false}/> */}
       {/* <RandomNum value={30} isPositive/> */}
       {/* <List items={["batman","superman", "superwomen", "women", "men"]} onClick={(item)=>console.log(item)} /> */}
