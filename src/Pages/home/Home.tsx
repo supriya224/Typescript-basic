@@ -3,12 +3,14 @@
 // import {  Box} from "../../components/Index"
 // import { ThemeContextProvider } from "../../components/context/ThemeContext"
 
-import {Text} from "../../components/Index"
+// import {Text} from "../../components/Index"
 
 // import { CounterFunc } from "../../components/Index"
 // import { Private } from "../../components/auth/Private"
 // import { Profile } from "../../components/auth/Profile"
-
+// import { Children } from "react";
+// import { Event } from "../../components/Index";
+import { Blog, Event } from "../../components/Index";
 
 // const personName={
 //   name:{
@@ -22,16 +24,33 @@ import {Text} from "../../components/Index"
 //     last: "maurya",
 //     age: 23
 //   }]
-
-export const Home = () => {
+function Home() {
+  const list = [
+    {
+      name: "hwllo wini"
+      // email:"suourya234@gmail.com"
+    }
+  ];
+  const addr = {
+    city: "renukoot",
+    pincode: 231217
+  };
   return (
-    <div>
-      <Text as="h1" size="lg">heading</Text>
+    <div className="bg-black">
+      {/* blog component */}
+      <Blog name="arti" id={23424} lists={list} address={addr} styles={{color:'white'}}>
+        hello children data
+      </Blog>
+      <Event/>
+      {/* <Event/> */}
+      {/* <Button text="neha" onClick={()=>alert("okay its working")}/> */}
+      {/* <Button onClick=""/> */}
+      {/* <Text as="h1" size="lg">heading</Text>
       <Text as="p"  size="md">paragraph</Text>
-      <Text as="label" htmlFor="someId"  size="sm" color="secondary">paragraph fdg</Text>
+      <Text as="label" htmlFor="someId"  size="sm" color="secondary">paragraph fdg</Text> */}
       {/* <Text/> */}
       {/* <Button variant="primary" onClick={()=>console.log('clicked')}>Primary button</Button> */}
-  {/* // <Button> */}
+      {/* // <Button> */}
       {/* <Toast position='center'/> */}
       {/* <RandomNum value={30} isNegative={true} isPositive={false} isZero={false}/> */}
       {/* <RandomNum value={30} isPositive/> */}
@@ -78,5 +97,7 @@ export const Home = () => {
       <Person name={personName}/> object type of daat 
       <PersonList names={nameList} /> */}
     </div>
-  )
+  );
 }
+
+export default Home;
