@@ -10,7 +10,7 @@
 // import { Profile } from "../../components/auth/Profile"
 // import { Children } from "react";
 // import { Event } from "../../components/Index";
-import { Blog, Event } from "../../components/Index";
+import { Blog, Event, State } from "../../components/Index";
 
 // const personName={
 //   name:{
@@ -42,6 +42,7 @@ function Home() {
         hello children data
       </Blog>
       <Event/>
+      <State/>
       {/* <Event/> */}
       {/* <Button text="neha" onClick={()=>alert("okay its working")}/> */}
       {/* <Button onClick=""/> */}
